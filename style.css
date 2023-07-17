@@ -11,7 +11,7 @@ body {
     overflow: hidden;
     background: #111110;
 }
-#tos-pre-register {
+#sf2-pre-register {
     min-width: 910px;
     overflow: hidden;
     background: #111110;
@@ -29,7 +29,7 @@ GNB
     background: rgba(0, 0, 0, 0.75);
 }
 
-#top a.tos_logo {
+#top a.company_logo {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -126,7 +126,7 @@ INTRO
     font-family: 'Roboto';
 }
 
-#intro p.btn_play {
+#intro a.btn_play {
     position: absolute;
     top: 520px;
     left: 50%;
@@ -137,7 +137,7 @@ INTRO
     background: url('./images/btn_play.png') no-repeat center center;
     cursor: pointer;
 }
-#intro p.btn_play::before {
+#intro a.btn_play::before {
     content: '';
     display: block;
     clear: both;
@@ -151,7 +151,7 @@ INTRO
     transition: opacity 0.3s;
 }
 
-#intro p.btn_play:hover::before {
+#intro a.btn_play:hover::before {
     opacity: 1;
 }
 
