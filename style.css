@@ -37,6 +37,7 @@ GNB
     width: 216px;
     height: 46px;
     background: url('./images/logo_dragonfly.png') no-repeat;
+    z-index: 1;
 }
 #top .top_txt {
     color: #fff;
@@ -104,15 +105,15 @@ INTRO
 
 .img_mouse {
     font-size: 5em;
-    animation: motion 0.7s /* 속도 */ linear 0s /* 처음부터 끝까지 일정 속도로 진행 */ infinite alternate; /* 무한 반복 */
+    animation: motion 0.7s linear 0s infinite alternate;
 }
 @keyframes motion {
     0% {
         margin-top: 0px;
-    } /* 처음 위치 */
+    }
     100% {
         margin-top: 10px;
-    } /* 마지막 위치 */
+    }
 }
 
 #intro .copy_txt {
@@ -752,7 +753,7 @@ POPUP
     left: 50%;
     transform: translate(-50%, -50%);
     background: #2e3338e6 0 0 no-repeat padding-box;
-    box-shadow: 0 0 10px #1ab9c9;
+    box-shadow: 0 0 10px #8c7431;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -774,7 +775,7 @@ POPUP
     margin-top: 20px;
     width: 112px;
     height: 48px;
-    background-color: #1ab9c9;
+    background-color: #8c7431;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     display: flex;

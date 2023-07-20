@@ -98,7 +98,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p class="complete_img"></p>
           <p class="img_ch1"></p>
           <p class="img_ch2"></p>
-          <a href="#" target="_blank" class="btn_check"></a>
+          <!-- 클릭하면 다시 원래 사전예약페이지로 이동 -->
+          <a onClick="window.location.reload()" class="btn_check"></a>
           <a @click="gotoDiscord" target="_blank" class="btn_ds"></a>
 
           <!--SF2 사전예약 페이지 나오면 링크 변경 필요 *Teddy -->
@@ -261,9 +262,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             baseAid: 1100,
             isProcessing: false,
             chkAgree: false,
-            linkFacebook: "https://www.facebook.com/TOSGLB",
-            linkYoutube: "https://youtube.com/@treeofsaviorglobal",
-            linkDiscord: "https://discord.gg/4nnnz3bU",
+            linkFacebook: "https://facebook.com/SpecialForce2Official",
+            linkYoutube: "https://www.youtube.com/@SKILL-SpecialForce2",
+            linkDiscord: "https://discord.gg/auRY9GA4XV",
             linkInsta: "https://www.instagram.com/treeofsaviorglobal",
             linkPolicy: "https://www.papayaplay.com/portal.do?tp=privacy",
             linkTerms: "https://www.papayaplay.com/portal.do?tp=terms",
@@ -386,7 +387,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   //console.log("ResultCode[0].Description : ", res.ResultCode[0].Description);
                   if( res.ResultCode[0].Code == "10000" ) {
                     // toastr.success("Success!<br>Message sent. Please check your email.");
-                    vm.popupMessage = "You have successfully pre-registered to Ragnarok. Please check the confirmation email we just sent.";
+                    vm.popupMessage = "You have successfully pre-registered for the S.K.I.L.L. - Special Force 2.";
                     vm.isShowPopup = true;
                     //해당 메시지 대신 사전예약완료되면 완료페이지로 이동하게 변경바랍니다. *Teddy //
                   } else if ( res.ResultCode[0].Code == "11000" ) {
